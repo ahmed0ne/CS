@@ -1,11 +1,13 @@
 import math
 
-n1 = int(input("Enter the number: "))
-s = 0
-if n1 > n2:
-    n1, n2 = n2, n1
-for i in range (n1+1, n2):
-    s += i
-a=s/(n2-n1-1)
-print("Sum = ", s)
-print("Average = ", a)
+n = int(input("Enter quantity of numbers: "))
+es = 0
+os = 0
+for i in range(n):
+    tn = int(input("Enter the value of the number: "))
+    if tn%2 == 0:
+        es += tn
+    else:
+        os += tn
+print("Sum of the odd elements = ", os)
+print("Sum of the even elements = ", es)
